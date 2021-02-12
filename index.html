@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login and Signup Form</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  
+  <div class="text-center mt-5">
+    <img class="mt-4 mb-4" src="./img/logo-dark.png" alt="Logo da Growdev">
+
+    <div class="form-toggle">
+      <button type="button" class="btn btn-primary" id="login-toggle">Logar</button>
+      <button type="button" class="btn btn-light" id="signup-toggle">Criar conta</button>
+    </div>
+
+
+    <div id="login-form">
+      <form style="max-width: 400px;margin: auto;">
+        <h1 class="h3 mt-4 mb-4 font-weight-normal">Logar</h1>
+        <input type="text" id="username-login" class="form-control mb-2" placeholder="Usuário" required autofocus/>
+        <input type="password" id="password-login" class="form-control" placeholder="Senha" required/>
+        <div class="mt-4">
+          <button type="button" class="btn btn-large btn-primary btn-block">Logar</button>
+        </div>
+        <div class="mt-4">
+          <p><a href="#">Esqueceu a senha?</a> </p>
+          <p><a href="#" onclick="toggleSignup()">Não possui conta? Criar</a></p>
+        </div>
+    </form>
+    </div>
+
+    <div id="signup-form">
+      <form style="max-width: 400px;margin: auto;">
+        <h1 class="h3 mt-4 mb-4 font-weight-normal">Criar conta</h1>
+        <input type="text" id="name-creation" class="form-control mb-2" placeholder="Nome" required autofocus/>
+        <input type="text" id="username-creation" class="form-control mb-2" placeholder="Usuário" required/>
+        <input type="password" id="password-creation" class="form-control mb-2" placeholder="Senha" required/>
+        <select id="type-creation" class="form-control" placeholder="Senha" required>
+          <option value="" disabled selected>Selecione tipo de usuário</option>
+          <option value="1">Admin</option>
+          <option value="2">Growdever</option>
+        </select>
+        <div class="mt-4">
+          <button type="button" class="btn btn-large btn-primary btn-block">Criar</button>
+        </div>
+        <div class="mt-4">
+          <p><a href="#" onclick="toggleLogin()">Já tem conta? Logar</a></p>
+        </div>
+    </form>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script src="./js/index.js"></script>
+</body>
+</html>
